@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduQuest</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <div>
+      <h1>EduQuest</h1>
+      <p>Transformando estudos em uma aventura.</p>
+    </div>
+
+    <div class="botoes">
+      <button class="btn-roxo">Entrar</button>
+      <button class="btn-amarelo">Começar</button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="cards">
+
+      <div class="card">
+        <h2>Perfil do Aluno</h2>
+
+        <div class="perfil">
+          <div class="avatar">G</div>
+
+          <div>
+            <h3>Gustavo Alves</h3>
+            <p>Nível 12</p>
+          </div>
+        </div>
+
+        <div class="xp">
+          <div class="xp-topo">
+            <span>XP</span>
+            <span>8.450 / 10.000</span>
+          </div>
+
+          <div class="barra">
+            <div class="progresso"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="card">
+        <h2>🔥 Streak Diário</h2>
+
+        <div class="streak">
+          <h3>15</h3>
+          <p>dias consecutivos estudando</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Missões da Semana</h2>
+
+        <div class="missao">
+          <span>Complete 3 quizzes hoje</span>
+          <button>Fazer</button>
+        </div>
+
+        <div class="missao">
+          <span>Participe de um debate</span>
+          <button>Fazer</button>
+        </div>
+
+        <div class="missao">
+          <span>Envie uma ideia</span>
+          <button>Fazer</button>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="ranking-card">
+      <h2>🏆 Ranking Global</h2>
+
+      <div id="ranking">
+        <p class="vazio">
+          Nenhum aluno entrou no ranking ainda.
+        </p>
+      </div>
+    </section>
+
+    <section class="assistente">
+      <h2>🤖 Assistente Inteligente</h2>
+
+      <input
+        type="text"
+        id="tema"
+        placeholder="Digite um assunto..."
+      >
+
+      <div class="acoes">
+        <button onclick="gerarQuiz()">Gerar Quiz</button>
+        <button onclick="resumir()">Resumir</button>
+      </div>
+
+      <div id="resultado"></div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
